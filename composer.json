@@ -1,0 +1,41 @@
+{
+	"name": "freshlondon/wp-recode",
+	"description": "A WordPress plugin to recode your website.",
+	"homepage": "https://github.com/freshlondon/wp-recode/",
+	"type": "wordpress-plugin",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"WP Recode"
+	],
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Niels Lange",
+			"email": "info@nielslange.de"
+		}
+	],
+	"require": {
+		"php": ">=7.3"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"humanmade/psalm-plugin-wordpress": "^2.0",
+		"overtrue/phplint": "^2.3",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"squizlabs/php_codesniffer": "^3.6",
+		"vimeo/psalm": "^4.7",
+		"wp-coding-standards/wpcs": "^2.3"
+	},
+	"scripts": {
+		"phpcbf": "phpcbf --standard=phpcs.xml .",
+		"phpcs": "phpcs --standard=phpcs.xml .",
+		"phplint": "phplint",
+		"psalm": "psalm --no-cache"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

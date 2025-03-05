@@ -1,0 +1,32 @@
+{
+	"name": "wp-recode",
+	"description": "A WordPress plugin to recode your website.",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"WP Recode"
+	],
+	"homepage": "https://github.com/freshlondon/wp-recode#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/freshlondon/wp-recode.git"
+	},
+	"bugs": {
+		"url": "https://github.com/freshlondon/wp-recode/issues"
+	},
+	"devDependencies": {
+		"@wordpress/env": "4.1.3",
+		"@wordpress/prettier-config": "1.1.1",
+		"cypress": "^9.1",
+		"eslint": "^7.32.0",
+		"node-sass": "^6.0.1",
+		"npm-run-all": "^4.1.5",
+		"prettier": "npm:wp-prettier@2.0.5",
+		"rtlcss": "^3.5.0"
+	},
+	"scripts": {
+		"phpcs": "phpcs --standard=phpcs.xml .",
+		"phpcbf": "phpcbf --standard=phpcs.xml ."
+	}
+}
